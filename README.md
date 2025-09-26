@@ -1,1 +1,7 @@
-Arquivos para gerar a infraestrutura de cluster K8S e Banco de dados como serviço da Digital Ocean
+doctl auth init
+
+doctl auth remove --context default
+
+doctl account get
+
+doctl kubernetes cluster kubeconfig save meu-k8s-cluster

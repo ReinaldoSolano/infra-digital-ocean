@@ -1,5 +1,5 @@
-resource "digitalocean_vpc" "main" {
-  name     = var.vpc_name
-  region   = var.region
-  ip_range = var.vpc_range
+resource "digitalocean_vpc" "vpc_k8s" {
+  name     = "meu-vpc"
+  region   = "nyc3"
+  description = "VPC para Kubernetes e PostgreSQL"
 }

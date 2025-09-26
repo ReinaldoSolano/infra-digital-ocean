@@ -2,13 +2,11 @@ terraform {
   required_providers {
     digitalocean = {
       source  = "digitalocean/digitalocean"
-      version = "~> 2.0"
+      version = "~> 2.33.0" # ou a versão mais recente disponível
     }
   }
-
-  # backend "pg" {
-  #   conn_str = "postgres://postgres:870441@192.168.0.6:5432/terraform"
-  # }
 }
 
-provider "digitalocean" {}
+provider "digitalocean" {
+  token = var.do_token
+}
